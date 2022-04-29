@@ -1,0 +1,39 @@
+.posters{
+    background-color: rgb(39, 39, 112);
+    padding: 80px var(--horizontal--padding);
+}
+.posters *{
+    color: white;
+}
+.poster_image{
+    width: 250px;
+    height: 350px;
+}
+.posters__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 33%;
+    font-size: 15px;
+}
+.posters__header>div{
+    flex: 1;
+}
+.posters__header__title{
+    text-align: center;
+    
+}
+.posters__header__title span{
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--lightgray)
+}
+.posters__header__more{
+    display: flex;
+    justify-content: flex-end;
+}
+.posters__header__more *{
+    color: rgba(255, 255, 255, 0.7);
+}
+.posters__header__more i{
+    margin-left: 10px;
+}
