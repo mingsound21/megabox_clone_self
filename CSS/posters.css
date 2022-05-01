@@ -1,19 +1,20 @@
 .posters{
-    background-color: rgb(39, 39, 112);
+    background : linear-gradient(rgb(32, 32, 32) 60%, rgb(83, 4, 83));
     padding: 80px var(--horizontal--padding);
 }
 .posters *{
     color: white;
 }
 .poster_image{
-    width: 250px;
-    height: 350px;
+    width: 220px;
+    height: 330px;
+    border-radius: 5px;
 }
 .posters__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0 15px 33%;
+    padding: 15px 0 25px 33%;
     font-size: 15px;
 }
 .posters__header>div{
@@ -36,4 +37,99 @@
 }
 .posters__header__more i{
     margin-left: 10px;
+}
+
+.posters__poster{
+    display: flex;
+    justify-content: space-between;
+}
+.poster_container{
+    position: relative;
+}
+.poster_number{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 35px;
+    transform: skewX(-10deg);
+    font-weight: 100;
+}
+.poster__btns{
+    display: flex;
+    margin-top: 10px;
+}
+.heart_btn, .reservation_btn{
+    padding: 8px 0;
+    border-radius: 3px;
+}
+.heart_btn{
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--lightgray);
+    flex-grow: 1;
+    margin-right: 7px;
+    
+}
+.heart_btn i{
+    font-size: 13px;
+    margin-right: 5px;
+}
+.reservation_btn{
+    background-color: #037B94;
+    flex-grow: 3;
+}
+
+.posters__nav{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 0;
+    margin: 50px 0;
+}
+.poster__nav__item{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    align-items: center;
+}
+.poster__nav__item:not(:last-of-type){
+    border-right: 1px solid var(--lightgray);
+}
+.poster__nav__item:not(:first-of-type) i{
+    margin-right: 10px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.poster__nav__item:not(:first-of-type) a{
+    font-weight:400;
+    color: rgba(255, 255, 255, 0.9);
+}
+.poster__nav__item input{
+    background-color: transparent;
+}
+.poster__nav__item input::placeholder{
+    color:rgba(255, 255, 255, 0.7)
+}
+
+.poster__nav__search{
+    border-bottom: 1px solid var(--lightgray);
+    padding-bottom: 7px;
+}
+
+.poster__nav__item button i{
+    color:rgba(255, 255, 255, 0.7)
+}
+
+.poster__mouse{
+    text-align: center;
+    
+}
+.poster__mouse i{
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    animation: upDown 1s ease-in-out 0s infinite alternate ;
+}
+
+@keyframes upDown {
+    0% {top: 20px;}
+    100% {top: 0px;}
 }
