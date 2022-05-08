@@ -1,6 +1,6 @@
 .posters{
     background : linear-gradient(rgb(32, 32, 32) 60%, rgb(83, 4, 83));
-    padding: 80px var(--horizontal--padding);
+    padding: 80px var(--horizontal--padding) 120px var(--horizontal--padding);
 }
 .posters *{
     color: white;
